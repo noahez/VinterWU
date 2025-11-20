@@ -1,22 +1,66 @@
 body{
- 
+ height: 100vh;
     margin: 0;
 }
 #wrapper{
+    gap: 15px;
     display: grid;
     grid: 50px 20px 1fr 1fr / 1fr 3fr 1fr;
 }
 
 header{
     grid-column: 1/4;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+header a{
+    width: 36px;
 }
 nav{
+    display: flex;
     grid-column: 1/4;
+    justify-content: space-around;
+    margin-bottom: 5px;
+    box-shadow: rgba(255, 87, 51, 0.4) 0px 5px, rgba(255, 87, 51, 0.3) 0px 10px, rgba(255, 87, 51, 0.2) 0px 15px, rgba(255, 87, 51, 0.1) 0px 20px, rgba(255, 87, 51, 0.05) 0px 25px;
 }
-h1{
+h1 a{
     color: #FF5733;
-    text-decoration:none
+    text-decoration:none;
+    
+        font-family: "Dancing Script", cursive;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        order: 1;
+        width:max-content;
+      
 }
 a{
     text-decoration: none;
 }
+div{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+height: 100%;
+}
+/* Add a black background color to the top navigation bar */
+.topnav {
+    overflow: hidden;
+    box-shadow:none;
+  order: 2;
+ 
+
+  }
+  /* Style the search box inside the navigation bar */
+  .topnav input[type=text] {
+    width: 500px;
+    border-radius: 15px;
+    padding: 6px;
+    border:1px;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+  }
