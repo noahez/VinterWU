@@ -6,14 +6,26 @@ body{
     gap: 15px;
     display: grid;
     grid: 50px 20px 1fr 1fr / 1fr 3fr 1fr;
+    overflow-y: hidden; /* Add the ability to scroll */
+}
+#wrapper::-webkit-scrollbar {
+  display: none;
 }
 #wrapper2{
     gap: 15px;
     display: grid;
     grid: 50px 20px 50px  / 1fr 3fr 1fr;
+    overflow: hidden;
     
 }
-
+#wrapper3{
+  gap: 15px;
+  display: grid;
+  grid: 50px 20px 1fr 1fr / 1fr 3fr 1fr;
+}
+.pad{
+  margin: 15px;
+}
 header{
     grid-column: 1/4;
     padding: 5px;
@@ -114,5 +126,19 @@ select{
   .boxcontainer {
     padding: 2px 16px;
     width: 300px;
-    
+  }
+
+  .container::-webkit-scrollbar {
+    display: none;
+  }
+  #login{
+    display: flex;
+    flex-direction: column;
+
+  }
+  #password{
+    width: 200px;
+  }
+  #email{
+    width: 200px;
   }
