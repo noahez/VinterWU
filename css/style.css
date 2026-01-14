@@ -1,200 +1,242 @@
-body{
- height: 100vh;
-    margin: 0;
+body {
+  height: 100vh;
+  margin: 0;
 }
-#wrapper{
-    gap: 15px;
-    display: grid;
-    grid: 50px 20px 1fr 1fr / 1fr 3fr 1fr;
-    overflow-y: hidden;
+
+#wrapper {
+  gap: 15px;
+  display: grid;
+  grid: 50px 30px 1fr 1fr / 1fr 3fr 1fr;
+  overflow-y: hidden;
 }
+
 #wrapper::-webkit-scrollbar {
   display: none;
 }
-#wrapper2{
-    gap: 15px;
-    display: grid;
-    grid: 50px 20px 50px  / 1fr 3fr 1fr;
-    overflow: hidden;
-    
-}
-#wrapper3{
+
+#wrapper2 {
   gap: 15px;
   display: grid;
-  grid: 50px 20px 1fr 1fr / 1fr 3fr 1fr;
+  grid: 50px 30px 50px / 1fr 3fr 1fr;
+  overflow: hidden;
+
 }
+
+#wrapper3 {
+  gap: 15px;
+  display: grid;
+  grid: 50px 30px 1fr 1fr / 1fr 3fr 1fr;
+}
+
 .logo {
-  width: 85px;
+  height: 65px;
   position: relative;
-  top:-15px;
+  top: 5px;
 }
-#wrapper4{
+
+#wrapper4 {
   gap: 15px;
   display: grid;
-  grid-template-rows: 50px 20px 1fr 1fr ;
+  grid-template-rows: 50px 30px 1fr 1fr;
   overflow: hidden;
 }
-.pad{
+
+.pad {
   margin: 15px;
 }
-.padtext{
+
+.padtext {
   margin: 15px;
   padding: 15px;
 }
-.padtext hej{
-color: #FF5733;
+
+.padtext hej {
+  color: #FF5733;
 }
-.pad img{
+
+.pad img {
   width: 100%;
   overflow: hidden;
 }
-.pad p{
+
+.pad p {
   text-align: center;
   color: gray;
 }
-header{
-    grid-column: 1/4;
-    padding: 5px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+
+p {
+  font-family: "Geom", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
-header a{
-    width: 36px;
+
+header {
+  grid-column: 1/4;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-nav{
-    display: flex;
-    grid-column: 1/4;
-    justify-content: space-around;
-    margin-bottom: 5px;
-    box-shadow: rgba(255, 87, 51, 0.4) 0px 5px, rgba(255, 87, 51, 0.3) 0px 10px, rgba(255, 87, 51, 0.2) 0px 15px, rgba(255, 87, 51, 0.1) 0px 20px, rgba(255, 87, 51, 0.05) 0px 25px;
+
+header a {
+  width: 36px;
 }
-h1 a{
-    color: #FF5733;
-    text-decoration:none;
-    
-        font-family: "Dancing Script", cursive;
-        font-optical-sizing: auto;
-        font-weight: 700;
-        font-style: normal;
-        order: 1;
-        width:max-content;
-      
+
+nav {
+  display: flex;
+  grid-column: 1/4;
+  justify-content: space-around;
+  margin-bottom: 5px;
+  box-shadow: rgba(255, 87, 51, 0.4) 0px 5px, rgba(255, 87, 51, 0.3) 0px 10px, rgba(255, 87, 51, 0.2) 0px 15px, rgba(255, 87, 51, 0.1) 0px 20px, rgba(255, 87, 51, 0.05) 0px 25px;
 }
-a{
-    text-decoration: none;
+
+h1 a {
+  color: #FF5733;
+  text-decoration: none;
+  position: relative;
+  top: -33px;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  order: 1;
+  width: max-content;
+
 }
-div{
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
-    background-color: whitesmoke;
-    border-radius: 5px;
-height: 100%;
+
+a {
+  text-decoration: none;
 }
+
+div {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  height: 100%;
+}
+
 /* Add a black background color to the top navigation bar */
 .topnav {
-    overflow: hidden;
-    box-shadow:none;
+  overflow: hidden;
+  box-shadow: none;
   order: 2;
- 
 
-  }
-  /* Style the search box inside the navigation bar */
-  .topnav input[type=text] {
-    width: 500px;
-    border-radius: 15px;
-    padding: 6px;
-    border:1px;
-    margin-top: 8px;
-    margin-right: 16px;
-    font-size: 17px;
-  }
-.filter{
-    grid-column: 1/4;
+
 }
-select{
-    margin-bottom: 10px;
-    margin-top: 10px;
-    margin-left: 5px;
-    border-radius: 15px;
-    padding: 5px;
-  }
-.container{
-    grid-column: 1/4;
-    display: flex;
-    flex-direction: row;
-   justify-content: space-evenly;
-   flex-wrap: wrap;
-   align-content: space-between;
-   overflow: scroll;
-   padding: 15px;
-   box-sizing: border-box;
-  }
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    border-radius: 5px; /* 5px rounded corners */
-    height: 100px;
-  }
-  
-  /* Add rounded corners to the top left and the top right corner of the image */
-  img {
-    border-radius: 5px 5px 0 0;
-  }
-    .fixed-size {
-        width: 300px;
-        height: 200px;
-  }
-  /* On mouse-over, add a deeper shadow */
-  .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
-  
-  /* Add some padding inside the card container */
-  .boxcontainer {
-    padding: 2px 16px;
-    width: 300px;
-  }
 
-  .container::-webkit-scrollbar {
-    display: none;
-  }
-  #login{
-    display: flex;
-    flex-direction: column;
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+  width: 500px;
+  border-radius: 15px;
+  padding: 6px;
+  border: 1px;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
 
-  }
-  #password{
-    width: 200px;
-  }
-  #email{
-    width: 200px;
-  }
-  .cart{
-    position: relative;
-    top:-13px;
-  }
-  .shopcart{
-    grid-column: 1/4;
-    padding: 15px;
-  }
-  footer{
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
-    background-color: whitesmoke;
-    border-radius: 5px;
-height: 100%;
-grid-column: 1/4;
-  }
-  .shopcart h1{
- text-align: center;
- vertical-align: text-bottom;
-  }
+.filter {
+  grid-column: 1/4;
+}
+
+select {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 5px;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.container {
+  grid-column: 1/4;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-content: space-between;
+  overflow: scroll;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  /* 5px rounded corners */
+  height: 100px;
+}
+
+/* Add rounded corners to the top left and the top right corner of the image */
+img {
+  border-radius: 5px 5px 0 0;
+}
+
+.fixed-size {
+  width: 300px;
+  height: 200px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Add some padding inside the card container */
+.boxcontainer {
+  padding: 2px 16px;
+  width: 300px;
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+#login {
+  display: flex;
+  flex-direction: column;
+
+}
+
+#password {
+  width: 200px;
+}
+
+#email {
+  width: 200px;
+}
+
+.cart {
+  position: relative;
+  top: -13px;
+}
+
+.shopcart {
+  grid-column: 1/4;
+  padding: 15px;
+}
+
+footer {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  height: 100%;
+  grid-column: 1/4;
+}
+
+.shopcart h1 {
+  text-align: center;
+  vertical-align: text-bottom;
+}
+
 h1 {
-    font-family: "Instrument Serif", serif;
-    font-weight: 500;
-    font-style: normal;
-  }
-  
-h2{
+  font-family: "Instrument Serif", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+h2 {
   font-family: "Instrument Serif", serif;
   font-weight: 500;
   font-style: normal;
